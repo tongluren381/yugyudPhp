@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="renderer" content="webkit">
+    <!-- 目前仅限360急速浏览 webkit:急速  ie-comp:ie兼容模式   ie-stand: ie标准模式 -->
+    <title>北京股票开户</title>
+    <meta name="keywords" content="股票开户，北京股票开户，炒股">
+    <meta name="description" content="股票资讯网站">
+    <!-- Bootstrap中文字体版 -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- 自定义样式 -->
+    <link href="css/common.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/ajax.js"></script>
+</head>
+
+<body>
+<!-- 整站通用的头部及导航条 -->
+<div id="header">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" style="padding:0 0 0 15px;" href="index.html"><img alt="Brand" style="max-width:130px;"
+                                                                                  src="images/logo.png"></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav navbar-right">
+                    <li  class="active"><a href="index.html">首页 <span class="sr-only">(current)</span></a><p class="line-top hidden-xs"></p></li>
+                                        <li ><a href="#">优惠开户</a></li>
+                                        <li ><a href="newslist.php">财经十二</a></li>
+                                        <li ><a href="xuexijinjie.html">学习进阶</a></li>
+                                        <li ><a href="caijingbowen.php">财经博文</a></li>  <!--放seo文章的-->
+                                        <li ><a href="#">联系我们</a></li>
+                                      
+                                </ul>
+                            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+</div>
+<!--  整站通用的头部及导航条 -->
+
+<!-- 全屏轮播图 -->
+<div id="carousel-example-generic" class="carousel slide my-slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <a target="_blank" href="#">
+                <img src="images/banner5.jpg" alt="股票开户">
+            </a>
+        </div>
+        <div class="item">
+            <a target="_blank" href="#">
+                <img src="images/banner6.jpg" alt="业务范围">
+            </a>
+        </div>
+    </div>
+</div>
+<!-- 全屏轮播图 -->
+<!--财经十二条-->
+
+<div class="index-row our-news">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 main-title">
+                <h2 class="h1">财经十二条</h2>
+
+                <p class="line line-big"></p>
+
+                <h2>
+                    <small>新闻只看十二条，每一条都是重磅！</small>
+                </h2>
+            </div>
+            <div id="news" class="row"></div>
+            
+
+<!-- 调用12次          
+            <div class="col-sm-6 col-md-4 newSize">
+               	<a href="{url}" class="newSize">
+                    <div class="thumbnail">             
+                        {imgeUrl}
+                    
+	                    <div class="caption">
+	                        <h4 style='height: 50px;'>{title}</h4>
+	                        <p style='height: 60px;'>{jianjie}</p>
+	                        <p>
+	                          <small>{author}</small>  <small style='margin-left:10px;'>{date}</small> <small style='margin-left:10px;'>{weight}</small>
+	                        </p>
+	                    </div>
+                    </div>
+                </a>
+            </div> -->
+
+					            
+				
+					            
+            
+            
+            
+            
+
+                <div class="col-sm-12 our-news-more">
+                <h2>
+                    <small><a href="/yugyud/newslist.html">更多资讯>>></a></small>
+                </h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--财经十二条-->
+<!-- 我们的成绩 -->
+<div class="index-row our-data">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 main-title">
+                <h2 class="h1">最新重磅数据</h2>
+
+                <p class="line line-big"></p>
+
+                <h2>
+                    <small>2019年重要数据。</small>
+                </h2>
+            </div>
+            <div class="col-sm-3 our-data-item sum-apply">
+                <div class="number-wrapper">
+                    <span id="sum-apply" class="run-number" data-to="240">449,572</span>亿元
+                </div>
+                <h4 class="title">2019年A股流通股总规模</h4>
+            </div>
+            
+            <div class="col-sm-3 our-data-item sum-rate">
+                <div class="number-wrapper">
+                    <span id="sum-rate" class="run-number" data-to="240">4.5</span>%
+                </div>
+                <h4 class="title">2019年11月CPI</h4>
+            </div>
+            <div class="col-sm-3 our-data-item sum-urgent">
+                <div class="number-wrapper">
+                    <span id="sum-urgent" class="run-number" data-to="240">3,831</span>
+                </div>
+                <h4 class="title">2019年A股上市公司数量</h4>
+            </div>   
+            <div class="col-sm-3 our-data-item urgent-rate">
+                <div class="number-wrapper">
+                    <span id="urgent-rate" class="run-number" data-to="240">54</span>%
+                </div>
+                <h4 class="title">2019年11月新增投资者环比</h4>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 我们的成绩 -->
+<!-- 我们的优势 -->
+<div class="index-row our-whyus">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 main-title">
+                <h2 class="h1">我们的优势</h2>
+
+                <p class="line line-big"></p>
+
+                <h2>
+                    <small>好中选优，每一位客户都应该被认真对待。</small>
+                </h2>
+            </div>
+            <div class="col-sm-3">
+                <div class="our-whyus-item">
+                    <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+
+                    <h3 class="title">十一年行业经验</h3>
+
+                    <p>多年从业，积累了丰富的行业经验。</p>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="our-whyus-item">
+                    <span style="font-size: 80px;" class="glyphicon glyphicon-screenshot" aria-hidden="true"></span>
+
+                    <h3 class="title">一对一细致服务</h3>
+
+                    <p>每一位客户，我们都提供一对一细致的服务。</p>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="our-whyus-item">
+                    <span style="font-size: 80px;" class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
+
+                    <h3 class="title">高效率即时响应</h3>
+
+                    <p>遇到任何疑问，您都会在第一时间得到我们的正面回应，并进行专业解答。</p>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="our-whyus-item">
+                    <span style="font-size: 80px;" class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+
+                    <h3 class="title">专业大量的研究报告免费提供</h3>
+
+                    <p>信息致胜，您可以快人一步！</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 我们的优势 -->
+<!-- 我们的服务 -->
+<div class="index-row our-service">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 main-title">
+                <h2 class="h1">我们的服务</h2>
+
+                <p class="line line-big"></p>
+
+                <h2>
+                    <small>与投资理财相关的所有服务，我们都提供支持。</small>
+                </h2>
+            </div>
+            <div class="col-sm-12 text-center card-box">
+                <ul class="card-area">
+                    <li class="card-item card-active">
+                        <div class="card-title">
+                            <h4>股票开户</h4>
+
+                            <p>大券商，低交易费</p>
+
+                        </div>
+                        <div class="card-content">
+                            <p>24小时开户</p>
+
+                            <p>全国最低佣金</p>
+
+                            <p>专业指导</p>
+
+                            <p>研报推荐</p>
+
+                            <p>开户好礼</p>
+                            <a href="/yugyud/guanggao.html" class="btn btn-outline-inverse">查看详情</a>
+
+                        </div>
+                    </li>
+                    <li class="card-item">
+                        <div class="card-title">
+                            <h4>期货开户</h4>
+
+                            <p>期货保证金交易</p>
+                        </div>
+                        <div class="card-content">
+                            <p>高风险交易品种</p>
+
+                            <p>交易有风险，入市需谨慎</p>
+
+                            <p>网上开户</p>
+
+                            <p>开户好礼</p>
+
+                            <p>全程解答所有疑问</p>
+                            <a href="/yugyud/guanggao.html" class="btn btn-outline-blue">查看详情</a>
+                        </div>
+                    </li>
+                    <li class="card-item">
+                        <div class="card-title">
+                            <h4>黄金交易开户</h4>
+
+                            <p>免面试中信代传递</p>
+                        </div>
+                        <div class="card-content">
+                            <p>简单申请材料</p>
+
+                            <p>无须进馆面试</p>
+
+                            <p>B1/B2十年有效</p>
+
+                            <p>可加急申请</p>
+
+                            <p>全流程服务</p>
+                            <a href="/yugyud/guanggao.html" class="btn btn-outline-blue">查看详情</a>
+                        </div>
+                    </li>
+                    <li class="card-item">
+                        <div class="card-title">
+                            <h4>期权开户</h4>
+
+                            <p>F1/F2留学陪读</p>
+                        </div>
+                        <div class="card-content">
+                            <p>签证方案咨询</p>
+
+                            <p>申请材料指导</p>
+
+                            <p>代缴SEVIS费</p>
+
+                            <p>面签培训</p>
+
+                            <p>可加急办理</p>
+                            <a href="/yugyud/guanggao.html" class="btn btn-outline-blue">查看详情</a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="clearfix"></div>
+            </div>
+            <div class="col-sm-12 text-center">
+                <a href="/yugyud/guanggao.html" class="btn btn-outline-blue btn-lg">查看更多服务</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 我们的服务 -->
+<!-- 客户的鼓励 -->
+<div class="index-row our-example">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 main-title">
+                <h2 class="h1">客户的鼓励</h2>
+
+                <p class="line line-big"></p>
+
+                <h2>
+                    <small>帮助您解决实际问题，顺利、及时地获得签证，是我们存在的根本价值。</small>
+                </h2>
+            </div>
+            <div class="col-sm-4 our-example-box">
+                <div class="our-example-popover">
+                    <div class="popover top">
+                        <div class="arrow"></div>
+                        <h3 class="popover-title-touxiang">
+                            <img src="images/pingjia1.jpg">
+                        </h3>
+
+                        <div class="popover-content">
+                            <p class="popover-content-text">
+                               对比了多家机构还是通过你们办理，最优惠！</p>
+
+                            <div class="popover-content-tag">
+                                <span class="bingzhong">股票开户</span>
+
+                                <div class="position-address">
+                                    <figure class="position-icon"></figure>
+                                    <span>北京</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <figure class="glly-icon ac-figure-icon"></figure>
+            </div>
+            <div class="col-sm-4 our-example-box">
+                <div class="our-example-popover">
+                    <div class="popover top">
+                        <div class="arrow"></div>
+                        <h3 class="popover-title-touxiang">
+                            <img src="images/pingjia2.jpg">
+                        </h3>
+
+                        <div class="popover-content">
+                            <p class="popover-content-text">
+                                我是一个小白，之前也在其他证券公司开户，也没人指导，没人服务。你们服务比较耐心，给你们点个赞</p>
+
+                            <div class="popover-content-tag">
+                                <span class="bingzhong">股票开户</span>
+
+                                <div class="position-address">
+                                    <figure class="position-icon"></figure>
+                                    <span>石家庄</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <figure class="glly-icon ac-figure-icon"></figure>
+            </div>
+            <div class="col-sm-4 our-example-box">
+                <div class="our-example-popover">
+                    <div class="popover top">
+                        <div class="arrow"></div>
+                        <h3 class="popover-title-touxiang">
+                            <img src="images/pingjia3.jpg">
+                        </h3>
+
+                        <div class="popover-content">
+                            <p class="popover-content-text">
+                                市场上好多贵金属交易盘，不敢玩，不正规，还是你们帮我开通的上海黄金交易所的账户，让我放心。</p>
+
+                            <div class="popover-content-tag">
+                                <span class="bingzhong">上海黄金交易所</span>
+
+                                <div class="position-address">
+                                    <figure class="position-icon"></figure>
+                                    <span>上海</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <figure class="glly-icon ac-figure-icon"></figure>
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<!-- 客户的鼓励 -->
+<!-- 为什么选择我们 -->
+<div class="index-row our-news">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 main-title">
+                <h2 class="h1">股票开户为什么选择我们</h2>
+
+                <p class="line line-big"></p>
+
+                <h2>
+                    <small>专业，服务，正规</small>
+                </h2>
+            </div>
+      		<div class="col-sm-12 ">
+      		
+      		
+      		</div>	
+                                    <div class="col-sm-12 our-news-more">
+                <h2>
+                    <small><a href="#">更多资讯>>></a></small>
+                </h2>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 最新资讯 -->
+<!-- 我们的客户 -->
+<div class="index-row our-client">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 main-title">
+                <h2 class="h1">我们的客户</h2>
+
+                <p class="line line-big"></p>
+
+                <h2>
+                    <small>部分合作机构</small>
+                </h2>
+            </div>
+            <div class="col-xs-4 col-sm-3 col-md-2 our-client-item">
+                <div class="our-client-logo">
+                    <img class="img-responsive center-block" src="images/client1.png" alt="海通证券">
+                </div>
+            </div>
+            <div class="col-xs-4 col-sm-3 col-md-2 our-client-item">
+                <div class="our-client-logo">
+                    <img class="img-responsive center-block" src="images/client2.png" alt="工商银行">
+                </div>
+            </div>
+            <div class="col-xs-4 col-sm-3 col-md-2 our-client-item">
+                <div class="our-client-logo">
+                    <img class="img-responsive center-block" src="images/client3.png" alt="农业银行">
+                </div>
+            </div>
+            <div class="col-xs-4 col-sm-3 col-md-2 our-client-item">
+                <div class="our-client-logo">
+                    <img class="img-responsive center-block" src="images/client4.png" alt="广大银行">
+                </div>
+            </div>
+            <div class="col-xs-4 col-sm-3 col-md-2 our-client-item">
+                <div class="our-client-logo">
+                    <img class="img-responsive center-block" src="images/client5.png" alt="中国银行">
+                </div>
+            </div>
+            <div class="col-xs-4 col-sm-3 col-md-2 our-client-item">
+                <div class="our-client-logo">
+                    <img class="img-responsive center-block" src="images/client6.png" alt="广发证券">
+                </div>
+            </div>
+     
+        </div>
+    </div>
+</div>
+<!-- 我们的客户 -->
+
+<!-- 数字滚动插件 -->
+<script type="text/javascript" src="js/countup.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        /**通用-banner大图自定义缩放**/
+        var zoomWidth = 992; //缩放阀值992px, 即所有小于992px的视口都会对原图进行缩放, 只是缩放比例不同
+        var maxWidth = 1920; //最大宽度1920px
+        var ratio = 1; //缩放比例
+        var viewWidth = window.innerWidth; // 视口宽度
+        var zoomSlider = function () {
+            if (viewWidth < 768) { //当视口小于768时(移动端), 按992比例缩放
+                ratio = viewWidth / zoomWidth; //视口宽度除以阀值, 计算缩放比例
+            } else if (viewWidth < zoomWidth) { //当视口界于768与992之间时, bootstrap主宽度为750, 这区间图片缩放比例固定.
+                ratio = zoomWidth / (zoomWidth + (zoomWidth - 750));
+            } else { // PC端不缩放
+                ratio = 1;
+            }
+            //ratio = viewWidth / zoomWidth; //视口宽度除以阀值, 计算缩放比例
+            //ratio = (ratio<=1) ? ratio : 1; //如果比例值大于1, 说明视口宽度高于阀值, 则不进行任何缩放
+            var width = maxWidth * ratio; //缩放宽度
+            $(".my-slide img").each(function () {
+                $(this).css({
+                    "width": width,
+                    "max-width": width,
+                    "margin-left": -(width - viewWidth) / 2
+                }); //图片自适应居中, 图片宽度与视口宽度差除以2的值, 设置为负margin
+            });
+        }
+        /**通用-我们的成绩等数字滚动特效**/
+        var numOptions = {
+            useEasing: true,
+            useGrouping: true,
+            separator: ',',
+            decimal: '.',
+            prefix: '',
+            suffix: ''
+        }
+        var numGroup = new Array(
+                new CountUp("sum-apply", 0, 449572, 0, 2.5, numOptions),
+                new CountUp("sum-rate", 0, 4.5, 1, 2.5, numOptions),
+                new CountUp("sum-urgent", 0, 3831, 0, 2.5, numOptions),
+                new CountUp("urgent-rate", 0, 54, 0, 2.5, numOptions)
+        );
+        var runNumber = function () {
+            $('.run-number').each(function () {
+                var oTop = $(this).offset().top;
+                var sTop = $(window).scrollTop();
+                var oHeight = $(this).height();
+                var oIndex = $(this).index('.run-number');
+                //console.log(oTop+'\r\n'+sTop+'\r\n'+oHeight+'\r\n'+$(window).height());
+                if (oTop >= sTop && (oTop + (oHeight / 2)) < (sTop + $(window).height())) {
+                    numGroup[oIndex].start();
+                    //console.log('元素'+$(this).index('.run-number')+'可见');
+                } else {
+                    //console.log('元素'+$(this).index('.run-number')+'不可见');
+                }
+            });
+        }
+
+        zoomSlider(); //页面加载时初始化并检查一次.
+        runNumber(); //页面加载时判断一次
+        /**视口发生变化时的事件**/
+        $(window).resize(function () {
+            viewWidth = window.innerWidth; // 重置视口宽度
+            zoomSlider();//判断是否绽放banner
+            runNumber();//判断是否执行动画
+        });
+        /**滚动事件**/
+        $(window).scroll(function () {
+            runNumber();
+        });
+
+        //首页-我们的服务
+        $('.card-item').each(function () {
+            $(this).mouseover(function () {
+                $(this).addClass('card-active');
+                $(this).siblings().removeClass('card-active');
+                $(this).find(".btn").addClass('btn-outline-inverse').removeClass('btn-outline-blue');
+                $(this).siblings().find(".btn").addClass('btn-outline-blue').removeClass('btn-outline-inverse');
+            });
+        });
+
+    });
+</script>
+
+<!-- 返回顶部滑块 -->
+<div id="clan-slider">
+    <ul>
+        <li class="hidden-xs">
+                        
+            <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=1036167988&site=qq&menu=yes" id="slider-qq"></a>
+            
+            <div class="clan-slider-tips">
+                QQ咨询
+            </div>
+        </li>
+        <li class="hidden-xs">
+            <a id="slider-phone" href="javascript:void(0);"></a>
+            <div class="clan-slider-tips">
+                17710722720
+            </div>
+        </li>
+        <li class="hidden-xs">
+            <a id="slider-wechat" href="javascript:void(0);"></a>
+            <div class="clan-slider-tips-wechat">
+                <img src="images/wechat.png">
+            </div>
+        </li>
+        <li><a id="slider-goTop" href="javascript:void(0);"></a></li>
+        <!--
+        <li class="visible-xs-block">
+            <a id="slider-menu" href="javascript:void(0);"></a>
+        </li>
+        -->
+    </ul>
+</div>
+<!-- 返回顶部滑块 --><!-- 整站通用的尾部 -->
+<div id="sidebar-bg" style="display: none;"></div>
+<!-- 立即咨询 -->
+
+<!-- 立即咨询 -->
+<!-- 通用页脚 -->
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6 col-sm-2 footer-item">
+                <div class="footer-list">
+                    <h4>常用工具</h4>
+                    <ul>
+                        <li><a href="" target="_blank">数据查询</a></li>
+                        <li><a href="">股民论坛</a></li>
+                        <li><a href="">资料下载</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-2 footer-item">
+                <div class="footer-list">
+                    <h4>快捷裢接</h4>
+                    <ul>
+                        <li><a href="">财经十二</a></li>
+                        <li><a href="">开户指导</a></li>
+                        <li><a href="">常见问题</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-2 footer-item">
+                <div class="footer-list">
+                    <h4>关于我们</h4>
+                    <ul>
+                        <li><a href="">联系我们</a></li>
+                        <li><a href="">服务咨询</a></li>
+                        <li><a href="javascript:AddFavorite('北京股票开户','http://www.yugyud.com/');">收藏本站</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-2 footer-item">
+                <div class="footer-wechat">
+                    <img class="img-responsive" src="images/wechat.png">
+                    
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 footer-item footer-item-last">
+                <div class="footer-contact">
+                    
+                    <h2><img src="images/pc-footer-qq.png">1036167988</h2>
+                    <h2><img src="images/pc-footer-mob.png">17710722720</h2>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<div id="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <p><a href="/yugyud/index.html">北京股票开户</a></p>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 通用页脚 -->
+<!-- 手机端底部 -->
+<div id="mob-bottom" class="visible-xs-block">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3 mob-bottom-item">
+                <a href="tel:17710722720">
+                    <img class="img-responsive center-block" src="images/mob-footer-phone.png">
+                    <span>电话咨询</span>
+                </a>
+            </div>
+            <div class="col-xs-3 mob-bottom-item">
+                <a href="tel:17710722720">
+                    <img class="img-responsive center-block" src="images/mob-footer-mob.png">
+                    <span>紧急电话</span>
+                </a>
+            </div>
+            <div class="col-xs-3 mob-bottom-item">
+                <a href="http://wpa.qq.com/msgrd?v=3&uin=1036167988&site=qq&menu=yes">
+                    <img class="img-responsive center-block web-chat" src="images/mob-footer-chat.png">
+                    <span>在线咨询</span>
+                </a>
+            </div>
+            <div class="col-xs-3 mob-bottom-item">
+                <a href="sms:17710722720">
+                    <img class="img-responsive center-block" src="images/mob-footer-msm.png">
+                    <span>短信咨询</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 手机端底部 -->
+<!-- 整站通用的尾部 -->
+
+
+<script type="text/javascript" src="js/common.js"></script>
+
+
+
+</body>
+</html>

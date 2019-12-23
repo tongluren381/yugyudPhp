@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+ 
+
+    <title>后台登陆</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+ 
+    <form class="form-signin"  method="post" action="doLogin.php">
+    	<h2 class="form-signin-heading">请登录</h2>
+   	  <label for="inputUsername" class="sr-only"></label>
+      <input id="inputUsername" type="text" required placeholder="用户名" name="username" class="form-control"><br>
+      <input type="password" placeholder="密码" name="password" class="form-control"><br>
+      	
+      <input type="text" required placeholder="验证码" name="verifycode" class="captcha">
+      <img id="captcha_img" src="captcha.php?r=echo rand(); ?>" alt="验证码">
+      <label><a href="javascript:void(0)" rel="external nofollow" onclick="document.getElementById('captcha_img').src='captcha.php?r='+Math.random()">换一个</a> </label><br>
+      
+      <label><input type="checkbox" name="autologin[]" value="1"/>自动登录</label><br>
+      <button type="submit" class="btn btn-lg btn-primary btn-block">登录</button>
+    </form>
+      
+
+
+
+    </div> <!-- /container -->
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
